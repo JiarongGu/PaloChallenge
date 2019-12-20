@@ -1,0 +1,14 @@
+$large-height: 64px;
+$small-height: 32px;
+
+.header-menu {
+  &--lg {
+    height: $large-height;
+    line-height: $large-height;
+  }
+
+  &--sm {
+    height: $small-height;
+    line-height: $small-height;
+  }
+}

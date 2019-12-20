@@ -1,0 +1,19 @@
+@import '_colors';
+@import '_box-shadows';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding: 0 24px;
+  position: relative;
+
+  &--fixed {
+    position: relative;
+    width: 300px;
+    background-color: $color-white;
+    box-shadow: $boxShadow--card;
+    padding: 24px;
+    margin: 0 24px;
+  }
+}

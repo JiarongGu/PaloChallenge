@@ -1,0 +1,59 @@
+@import '_colors';
+@import '_box-shadows';
+
+.button {
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  margin-left: -24px;
+  flex-direction: column;
+}
+
+.group {
+  margin-bottom: 12px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+}
+
+.icon {
+  font-size: 36px;
+  color: $color-grayMed;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $color-grayMed;
+  }
+
+  &0 {
+    @extend .icon;
+    color: $color-midGreen;
+  }
+
+  &1 {
+    @extend .icon;
+    color: $color-lightGreen;
+  }
+
+  &2 {
+    @extend .icon;
+    color: $color-yellow
+  }
+
+  &3 {
+    @extend .icon;
+    color: $color-orange
+  }
+
+  &4 {
+    @extend .icon;
+    color: $color-red
+  }
+}

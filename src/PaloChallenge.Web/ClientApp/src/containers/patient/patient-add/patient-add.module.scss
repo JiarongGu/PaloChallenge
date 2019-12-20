@@ -1,0 +1,118 @@
+@import '_colors';
+@import '_box-shadows';
+@import '_breakpoints';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-sm-max) {
+    flex-direction: row;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding: 0 24px;
+  position: relative;
+
+  &--fixed {
+    position: relative;
+    height: calc(100vh - 130px);
+    background-color: $color-white;
+    box-shadow: $boxShadow--card;
+    padding: 24px;
+
+    @media (min-width: $screen-sm-max) {
+      width: 300px;
+      margin: 0 24px;
+      height: unset;
+    }
+  }
+}
+
+.selection {
+  margin-bottom: 12px;
+  padding: 12px 24px;
+
+  background-color: $color-white;
+  box-shadow: $boxShadow--card;
+
+  &--selected {
+    background-color: $color-blue;
+    color: white;
+  }
+
+  &:hover {
+    background-color: $color-blue--light;
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $color-blue;
+  }
+}
+
+.hospital {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    flex: 1;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  margin-left: -24px;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 12px;
+  color: $color-grayMed;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $color-grayMed;
+  }
+
+  &0 {
+    @extend .icon;
+    color: $color-midGreen;
+  }
+
+  &1 {
+    @extend .icon;
+    color: $color-lightGreen;
+  }
+
+  &2 {
+    @extend .icon;
+    color: $color-yellow
+  }
+
+  &3 {
+    @extend .icon;
+    color: $color-orange
+  }
+
+  &4 {
+    @extend .icon;
+    color: $color-red
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "./build ",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noImplicitReturns": false,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@assets*": ["assets*"],
+      "@assets": ["assets"],
+      "@components*": ["components*"],
+      "@components": ["components"],
+      "@containers*": ["containers*"],
+      "@containers": ["containers"],
+      "@decorators*": ["decorators*"],
+      "@decorators": ["decorators"],
+      "@models": ["models"],
+      "@models*": ["models*"],
+      "@services": ["services"],
+      "@services*": ["services*"],
+      "@sinks": ["sinks"],
+      "@sinks*": ["sinks*"],
+      "@styles*": ["styles*"],
+      "@styles": ["styles"],
+      "@utils*": ["utils*"],
+      "@utils": ["utils"]
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}
