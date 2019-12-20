@@ -11,7 +11,7 @@ import { AppHeaderMenu } from '../app-header-menu/app-header-menu';
 import * as styles from './app-container.module.scss';
 
 export const AppContainer: React.FunctionComponent = () => {
-  const navigation = useSink(NavigationSink, false);
+  const navigation = useSink(NavigationSink, sink => [sink.activeRoute]);
   const routeKeys = navigation.activeRoute && navigation.activeRoute.keys;
 
   return (

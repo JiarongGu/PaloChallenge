@@ -1,14 +1,11 @@
-$large-height: 64px;
-$small-height: 32px;
-
 .header-menu {
   &--lg {
-    height: $large-height;
-    line-height: $large-height;
+    height: 64px;
+    line-height: 62px
   }
 
   &--sm {
-    height: $small-height;
-    line-height: $small-height;
+    height: 32px;
+    line-height: 30px;
   }
 }
